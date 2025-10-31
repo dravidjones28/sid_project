@@ -88,7 +88,7 @@ export default function ComingSoon() {
           className="bg-transparent flex-1 px-3 py-2 text-sm focus:outline-none text-white placeholder-gray-400"
         />
         <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full text-sm font-medium transition">
-          Notify Me
+          Notify
         </button>
       </motion.div>
 
