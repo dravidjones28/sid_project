@@ -1,7 +1,8 @@
 "use client"
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Instagram, Dribbble, Linkedin } from "lucide-react";
+import { Mail} from "lucide-react";
+import { FaBehance, FaLinkedin, FaInstagram, FaDribbble } from "react-icons/fa";
 
 export default function ComingSoon() {
   const [timeLeft, setTimeLeft] = useState({
@@ -91,22 +92,50 @@ export default function ComingSoon() {
         </button>
       </motion.div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1.6 }}
-        className="flex gap-6 text-gray-400"
-      >
-        <a href="#" className="hover:text-white transition">
-          <Instagram size={22} />
-        </a>
-        <a href="#" className="hover:text-white transition">
-          <Dribbble size={22} />
-        </a>
-        <a href="#" className="hover:text-white transition">
-          <Linkedin size={22} />
-        </a>
-      </motion.div>
+<motion.div
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 1.6 }}
+  className="flex gap-6 text-gray-400"
+>
+  <a
+    href="https://www.behance.net/vikasgowtham"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-[#1769ff] transition"
+  >
+    <FaBehance size={22} />
+  </a>
+
+  <a
+    href="https://www.linkedin.com/in/vikasgowtham/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-[#0A66C2] transition"
+  >
+    <FaLinkedin size={22} />
+  </a>
+
+  <a
+    href="https://www.instagram.com/sidartdesign/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-[#E1306C] transition"
+  >
+    <FaInstagram size={22} />
+  </a>
+
+  <a
+    href="https://www.dribble.com/vikasgowtham"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-[#EA4C89] transition"
+  >
+    <FaDribbble size={22} />
+  </a>
+</motion.div>
+
+
 
       {/* <footer className="absolute bottom-6 text-sm text-gray-500">
         © {new Date().getFullYear()}
